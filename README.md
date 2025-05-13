@@ -56,3 +56,13 @@ The architecture is composed of three main layers:
    cd dispatcher/
    g++ dispatcher.cpp -o dispatcher.exe -lws2_32
    ./dispatcher.exe
+2. **Start a ServerProxy (Java)**
+   ```bash
+   cd server-part/
+   javac *.java
+   java ServerProxy 6001 MathServer
+   java ServerProxy 6002 InfoServer
+3. **Run the Client (Node.js)**
+   ```bash
+   cd client/
+   node client.js
